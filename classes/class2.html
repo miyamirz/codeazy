@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,27 +7,55 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello Codeazy</h1>
-    <p>This is a paragraph.   <span>This is a span</span></p>
-    <div id="customer-details">
-        <h2>Customer Details</h2>
-        <p>Name: John Doe</p>
-        <p>Email: john.doe@example.com</p>
-        <p>Phone: 1234567890</p>
+    <div class="project-header">
+        <h1 class="heading">Codeazy</h1>
+        <img id="codeazy-logo" src="codeazy.jpg" alt="Codeazy">
     </div>
-    <div id="order-details">
-        <h2>Order Details</h2>
-        <p>Order ID: 1234567890</p>
-        <p>Order Date: 2025-01-01</p>
-        <p>Order Total: $100.00</p>
-        <div id="order-items">
-            <h3>Order Items</h3>
-            <p>Item 1: $10.00</p>
-            <p>Item 2: $20.00</p>
-            <p>Item 3: $30.00</p>
+    <div class="project-content">
+        <div class="project-content-inner">
+            <h2>Project Content</h2>
+            <p>This is a paragraph.   <span>This is a span</span></p>
+        </div>
+        <div class="project-content-inner">
+            <h2>Project Content</h2>
+            <p>This is a paragraph.   <span>This is a span</span></p>
+        </div>
+        <div class="project-content-inner">
+            <h2>Project Content</h2>
+            <p>This is a paragraph.   <span>This is a span</span></p>
+        </div>
+        <div class="project-content-inner">
+            <h2>Project Content</h2>
+            <p>This is a paragraph.   <span>This is a span</span></p>
         </div>
     </div>
-    <form action="/goolge">
+    <!-- <p>This is a paragraph.   <span>This is a span</span></p>
+    <div class="customer-details">
+        <div id="customer-details">
+            <h2>Customer Details</h2>
+            <p>Name: John Doe</p>
+            <p>Email: john.doe@example.com</p>
+            <p>Phone: 1234567890</p>
+        </div>
+        <div class="order-details">
+            <div class="order-details-inner">
+                <h2>Order Details</h2>
+                <p>Order ID: 1234567890</p>
+                <p>Order Date: 2025-01-01</p>
+                <p>Order Total: $100.00</p>
+            </div>
+
+            <div id="order-items">
+                <h3>Order Items</h3>
+                <p>Item 1: $10.00</p>
+                <p>Item 2: $20.00</p>
+                <p>Item 3: $30.00</p>
+                
+            </div>
+            <input type="text" name="order-items">
+        </div>
+    </div> -->
+    <form action="/goolge" class="form">
         <label for="name">Name</label>
         <input type="text" id="name" name="name">
         <label for="email">Email</label>
@@ -53,9 +82,15 @@
             <option value="female">Female</option>
         </select>
 
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit-button">Submit</button>
     </form>
-    <table>
+    <div class="box-container1">
+        <div style="background-color: red; width: 100px; height: 100px;">1</div>
+        <div style="background-color: rgb(13, 0, 255); width: 100px; height: 100px;">2</div>
+        <div style="background-color: rgb(242, 255, 0); width: 100px; height: 100px;">3</div>
+        <div style="background-color: rgb(141, 123, 123); width: 100px; height: 100px;">4</div>
+    </div>
+    <!-- <table>
         <thead>
             <tr>
                 <th>Name</th>
@@ -70,6 +105,6 @@
                 <td>1234567890</td>
             </tr>
         </tbody>
-    </table>
+    </table> -->
 </body>
 </html>
